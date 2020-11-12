@@ -1,0 +1,19 @@
+{
+    "cities":[
+        "Warszawa",
+        "Kraków",
+        "Gdańsk"
+    ],
+    "countries":[
+        "Polska",
+        "Rosja",
+        "Francja"
+    ],
+    "proverbs":[
+        "bez pracy nie ma kołaczy",
+        "czas leczy rany",
+        "elektryka prąd nie tyka",
+        "apetyt rośnie w miarę jedzenia",
+        "do trzech razy sztuka"
+    ]
+}
