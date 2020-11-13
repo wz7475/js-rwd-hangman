@@ -71,11 +71,6 @@ body, html{
         display: flex;
         justify-content: space-between;
         align-items: flex-start;
-        /* border: 1px solid red; */
-    }
-    #keyboard, #picture{
-
-        /* border: 1px solid red; */
     }
     #picture{
         line-height: 30px;
@@ -90,10 +85,6 @@ body, html{
     #game{
         display: flex;
     }
-    /* #keyboard, #picture{
-
-        border: 1px solid red;
-    } */
     #keyboard{
         margin-left: 30px;
     }
