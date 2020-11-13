@@ -1,0 +1,7 @@
+- add id to each letter
+- class letter - cursor pionter
+- onlick at each letter change color if it doesn't have green or red class:
+    - set one
+    - disable cursor pointer
+    - play sound
+    - if it's a miss - advance pic
