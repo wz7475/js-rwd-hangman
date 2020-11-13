@@ -1,5 +1,5 @@
 let passwd = "test passwd";
-let hashed_passwd = hash_passwd(passwd);
+
 
 const create_keyboard = () => {
     const letters = "AĄBCĆDEĘFGHIJKLŁMNŃOÓPQRSŚTUVWXYZŻŹ";
@@ -13,13 +13,18 @@ const create_keyboard = () => {
 //create hashed copy
 const hash_passwd = (passwd) => {
     for (let i = 0; i < passwd.length; i++) {
-        if (test[i] !== " ") {
-            test[i] = "-";
+        if (passwd[i] !== " ") {
+            passwd = passwd.substring(0, i) + "-" + passwd.substring(i+1);
         }
     }
     return passwd;
 }
 
+let hashed_passwd = hash_passwd(passwd);
+
+const print_passwd = () => {
+    document.getElementById("passwd").innerHTML = hash_passwd(passwd);
+}
 
 const check_letter = (letter) => {
     let indexes = [];
@@ -35,3 +40,9 @@ const check_letter = (letter) => {
         hashed_passwd = hashed_passwd.substring(0, indexes[i]) + letter + hashed_passwd.substring(indexes[i] + 1);
     }
 }
+
+
+window.onload = function() {
+    create_keyboard();
+    print_passwd();
+  }
