@@ -1,11 +1,9 @@
 
-- class letter - cursor pionter
-- onlick at each letter change color if it doesn't have green or red class:
+1) if it's a miss - advance pic
+2) counter of mistakes - in picture's corner
+3) onlick at each letter change color if it doesn't have green or red class:
     - set one
-    - disable cursor pointer
     - play sound
-    - if it's a miss - advance pic
-- counter of mistakes - in picture's corner
-- layout 
+4) layout 
     - scale picture < 900px
     - improve keyboard on small screens

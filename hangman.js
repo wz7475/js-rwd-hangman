@@ -1,5 +1,6 @@
 let passwd = "TEST PASSWORD";
 const letters = "AĄBCĆDEĘFGHIJKLŁMNŃOÓPQRSŚTUVWXYZŻŹ";
+let mistakes = 0;
 
 const create_keyboard = () => {
     let keyboard_content = "";
@@ -40,11 +41,12 @@ const check_letter = (letter) => {
     }
     //update passwd
     print_passwd();
-    //
+    //disable cursor
     document.getElementById(letter).style.cursor = "default";
+    //if indexes.length =0 -> advance picture
 }
 
-
+//load layout
 window.onload = function() {
     create_keyboard();
     print_passwd();

@@ -58,6 +58,14 @@ body, html{
     cursor: pointer;
 }
 
+.red{
+    color: red;
+}
+
+.green{
+    color: greenyellow;
+}
+
 
 @media only screen and (max-width: 450px){
     p{
