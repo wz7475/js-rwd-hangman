@@ -5,3 +5,7 @@
     - disable cursor pointer
     - play sound
     - if it's a miss - advance pic
+- counter of mistakes - in picture's corner
+- layout 
+    - scale picture < 900px
+    - improve keyboard on small screens
