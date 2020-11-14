@@ -1,11 +1,11 @@
-
-1) if it's a miss - advance pic
-2) counter of mistakes - in picture's corner
-3) onlick at each letter change color if it doesn't have green or red class:
-    - set one
-    - play sound
-4) layout 
+- counter of mistakes - in picture's corner
+- win message
+- reload
+    - add button
+    - envoke start
+    - reomve message class from keyboard (in start function?)
+- layout 
     - scale picture < 900px
     - improve keyboard on small screens
-5) new passowrds
-6) difficulty levels
+- new passowrds
+- difficulty levels
