@@ -7,3 +7,5 @@
 4) layout 
     - scale picture < 900px
     - improve keyboard on small screens
+5) new passowrds
+6) difficulty levels

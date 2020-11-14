@@ -27,6 +27,9 @@ const print_passwd = () => {
 }
 
 const check_letter = (letter) => {
+    //check if letter was already clicked
+    if (document.getElementById(letter).classList.length > 1)
+        return;
     //replace dashes with letters
     let indexes = [];
     let buf;
@@ -43,13 +46,38 @@ const check_letter = (letter) => {
     print_passwd();
     //disable cursor
     document.getElementById(letter).style.cursor = "default";
-    //if indexes.length =0 -> advance picture
+    //if indexes.length === 0 -> advance picture and make red, increment mistakes
+    // else make green
+    if (indexes.length === 0){
+        document.getElementById(letter).classList.add("red");
+        let audio = new Audio('audio/no.wav');
+        audio.play();
+        mistakes++;
+        let address = `<br><img src="img/s${mistakes}.jpg">`
+        document.getElementById("picture").innerHTML = address;
+        if (mistakes === 9){
+            failed();
+            return;
+        }
+    }
+    else{
+        document.getElementById(letter).classList.add("green");
+        let audio = new Audio('audio/yes.wav');
+        audio.play();
+    }
+}
+
+//insert fail message
+const failed = () =>{
+    let message = `Nie udało się! Prawidłowe hasło:\n${passwd}`;
+    document.getElementById("keyboard").classList.add("message");
+    document.getElementById("keyboard").innerHTML = message;
 }
 
 //load layout
-window.onload = function() {
+const start = () =>{
     create_keyboard();
     print_passwd();
-  }
+}
 
-  
+window.onload = start;
