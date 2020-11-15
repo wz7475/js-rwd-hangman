@@ -1,15 +1,26 @@
-let passwd = "apetyt rośnie w miarę jedzenia".toUpperCase();
+let passwd = "";
+let hashed_passwd = "";
 const letters = "AĄBCĆDEĘFGHIJKLŁMNŃOÓPQRSŚTUVWXYZŻŹ";
 let mistakes = 0;
+const proverbs = [
+    "bez pracy nie ma kołaczy",
+    "czas leczy rany",
+    "elektryka prąd nie tyka",
+    "apetyt rośnie w miarę jedzenia",
+    "do trzech razy sztuka",
+    "Broda mędrcem nie czyn",
+    "Co nagle, to po diable",
+    "Co z oczu, to z serca",
+    "Darowanemu koniowi w zęby się nie zagląda",
+    "Fortuna kołem się toczy"
+];
 
-/* const randomize_passwd = () =>{
+const randomize_passwd = () =>{
     function randomInt(min, max) {
         return min + Math.floor((max - min) * Math.random());
     }
-    let file = require('data/all.json');
-    let length = file["proverbs"].length;
-    return file["proverbs"][randomInt(0, length)];
-} */
+    return proverbs[randomInt(0,proverbs.length)].toUpperCase();
+}
 
 const create_keyboard = () => {
     let keyboard_content = "";
@@ -28,8 +39,6 @@ const hash_passwd = (passwd) => {
     }
     return passwd;
 }
-
-let hashed_passwd = hash_passwd(passwd);
 
 const print_passwd = () => {
     document.getElementById("passwd").innerHTML = hashed_passwd;
@@ -105,7 +114,8 @@ const message = (score) =>
 
 //load layout
 const start = () => {
-    //passwd = randomize_passwd();
+    passwd = randomize_passwd();
+    hashed_passwd = hash_passwd(passwd);
     create_keyboard();
     print_passwd();
     document.getElementById("keyboard").classList.remove("message");

@@ -1,2 +1,10 @@
-- new passowrds
-- difficulty levels
+- in reach so far
+    - difficulty levels
+    - hint
+    - reset during game
+    - counter win/lose per session
+        - reset it
+- advanced
+    - time limit
+    - 1 / 2 player mode
+    - categories

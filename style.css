@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    border: 1px solid red;
+    /* border: 1px solid red; */
 }
 
 body, html{
@@ -33,7 +33,7 @@ body, html{
 }
 
 #img_container{
-    border: 1px solid yellow;
+    /* border: 1px solid yellow; */
     max-width: 100%;
     width: 450px;
     margin: auto;
