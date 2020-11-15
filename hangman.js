@@ -120,6 +120,7 @@ const start = () => {
     print_passwd();
     document.getElementById("keyboard").classList.remove("message");
     mistakes = 0;
+    advance_picture();
 }
 
 window.onload = start;
