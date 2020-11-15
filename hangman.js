@@ -8,7 +8,7 @@ const proverbs = [
     "elektryka prąd nie tyka",
     "apetyt rośnie w miarę jedzenia",
     "do trzech razy sztuka",
-    "Broda mędrcem nie czyn",
+    "Broda mędrcem nie czyni",
     "Co nagle, to po diable",
     "Co z oczu, to z serca",
     "Darowanemu koniowi w zęby się nie zagląda",
