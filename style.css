@@ -96,6 +96,26 @@ body, html{
     padding: 50px;
 }
 
+#button{
+    color: yellowgreen;
+    font-size: 1.5em;
+    padding: 4%;
+    border-radius: 20px;
+    border: 3px solid yellowgreen;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+#button:hover{
+    background-color: yellowgreen;
+    color: #fff;
+    cursor: pointer;
+}
+
 @media only screen and (max-width: 450px){
     #keyboard{
         width: auto;

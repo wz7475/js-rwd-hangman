@@ -1,6 +1,15 @@
-let passwd = "TEST";
+let passwd = "apetyt rośnie w miarę jedzenia".toUpperCase();
 const letters = "AĄBCĆDEĘFGHIJKLŁMNŃOÓPQRSŚTUVWXYZŻŹ";
 let mistakes = 0;
+
+/* const randomize_passwd = () =>{
+    function randomInt(min, max) {
+        return min + Math.floor((max - min) * Math.random());
+    }
+    let file = require('data/all.json');
+    let length = file["proverbs"].length;
+    return file["proverbs"][randomInt(0, length)];
+} */
 
 const create_keyboard = () => {
     let keyboard_content = "";
@@ -88,15 +97,18 @@ const message = (score) =>
         message = "Nie udało się! Prawidłowe hasło:\n" + passwd;
         audio = new Audio('audio/fail.wav');
     }
+    let content = `<div id="text">${message}</div><div id="button" onclick="start()">JESZCZE RAZ</div>`;
     document.getElementById("keyboard").classList.add("message");
-    document.getElementById("keyboard").innerHTML = message;
+    document.getElementById("keyboard").innerHTML = content;
     audio.play();
 }
 
 //load layout
 const start = () => {
+    //passwd = randomize_passwd();
     create_keyboard();
     print_passwd();
+    document.getElementById("keyboard").classList.remove("message");
 }
 
 window.onload = start;

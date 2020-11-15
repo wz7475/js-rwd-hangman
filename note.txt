@@ -1,6 +1,2 @@
-- reload
-    - add button
-    - envoke start
-    - reomve message class from keyboard (in start function?)
 - new passowrds
 - difficulty levels
