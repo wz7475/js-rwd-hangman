@@ -27,7 +27,7 @@ const print_passwd = () => {
 }
 
 const advance_picture = () =>{
-    let address = `<img src="img/s${mistakes}.jpg"><div id="counter">${mistakes}/9</div>`
+    let address = `<div id="img_container"><img src="img/s${mistakes}.jpg"><span id="counter">${mistakes}/9</span></div>`
     document.getElementById("picture").innerHTML = address;
 }
 

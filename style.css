@@ -25,7 +25,6 @@ body, html{
     text-align: center;
     line-height: 0px;
     max-height: 290px;
-    position: relative;
 }
 
 #picture img{
@@ -33,11 +32,21 @@ body, html{
     width: 450px;
 }
 
+#img_container{
+    border: 1px solid yellow;
+    max-width: 100%;
+    width: 450px;
+    margin: auto;
+    position: relative;
+}
+
 #counter{
     color: #fff;
     position: absolute;
-    bottom: 60px;
-    left: 50%;
+    bottom: 29%;
+    left: 8%;
+    font-size: 1.8em;
+    letter-spacing: 0.2em;
 }
 
 #keyboard{
@@ -91,10 +100,29 @@ body, html{
     #keyboard{
         width: auto;
     }
+    .letter{
+        padding: 7px;
+        border: 2px solid #fff;
+        border-radius: 5px;
+        margin: 3px 3px;
+        width: 50px;
+        font-weight: 900;
+    }
     /* #picture img{
         height: 150px;
         width: auto;
     } */
+}
+
+@media only screen and (max-width: 330px){
+    .letter{
+        padding: 4px;
+        border: 2px solid #fff;
+        border-radius: 5px;
+        margin: 3px 3px;
+        width: 40px;
+        font-weight: 900;
+    }
 }
 
 @media only screen and (min-width: 900px){

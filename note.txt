@@ -1,10 +1,7 @@
-- counter of mistakes - in picture's corner
 - reload
     - add button
     - envoke start
     - reomve message class from keyboard (in start function?)
-- layout 
-    - scale picture < 900px
-    - improve keyboard on small screens
+
 - new passowrds
 - difficulty levels
