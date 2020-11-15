@@ -58,8 +58,6 @@ const check_letter = (letter) => {
         let audio = new Audio('audio/no.wav');
         audio.play();
         mistakes++;
-        /* let address = `<br><img src="img/s${mistakes}.jpg">`
-        document.getElementById("picture").innerHTML = address; */
         advance_picture();
         // if lost
         if (mistakes === 9) {
@@ -77,26 +75,6 @@ const check_letter = (letter) => {
         message(true);
         return;
     }
-}
-
-//insert fail message
-const failed = () => {
-    let message = `Nie udało się! Prawidłowe hasło:
-    ${passwd}`;
-    document.getElementById("keyboard").classList.add("message");
-    document.getElementById("keyboard").classList.remove("keyboard");
-    document.getElementById("keyboard").innerHTML = message;
-    let audio = new Audio('audio/fail.wav');
-    audio.play();
-}
-
-//insert win message
-const won = () => {
-    let message = `Udało się! Gratulacje!`;
-    document.getElementById("keyboard").classList.add("message");
-    document.getElementById("keyboard").innerHTML = message;
-    let audio = new Audio('audio/win.wav');
-    audio.play();
 }
 
 const message = (score) =>
