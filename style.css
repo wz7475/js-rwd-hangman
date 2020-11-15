@@ -25,11 +25,19 @@ body, html{
     text-align: center;
     line-height: 0px;
     max-height: 290px;
+    position: relative;
 }
 
 #picture img{
     max-width: 100%;
     width: 450px;
+}
+
+#counter{
+    color: #fff;
+    position: absolute;
+    bottom: 60px;
+    left: 50%;
 }
 
 #keyboard{
@@ -38,12 +46,6 @@ body, html{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    -webkit-touch-callout: none;
-    -webkit-user-select: none;
-    -khtml-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
 }
 
 .letter{
@@ -55,6 +57,12 @@ body, html{
     text-align: center;
     cursor: pointer;
     font-weight: 900;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }
 
 .red{
@@ -72,9 +80,11 @@ body, html{
 .message{
     display: flex;
     align-items: center;
+    justify-content: center;
     text-align: center;
     height: 350px;
     font-size: 1.3em;
+    padding: 50px;
 }
 
 @media only screen and (max-width: 450px){

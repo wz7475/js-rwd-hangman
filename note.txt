@@ -1,5 +1,4 @@
 - counter of mistakes - in picture's corner
-- win message
 - reload
     - add button
     - envoke start

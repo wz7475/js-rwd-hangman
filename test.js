@@ -13,15 +13,6 @@ for (let i=0; i<indexes.length; i++){
 }
 console.log(word); */
 
-const hash_passwd = (passwd) => {
-    for (let i = 0; i < passwd.length; i++) {
-        if (passwd[i] !== " ") {
-            passwd = passwd.substring(0, i) + "-" + passwd.substring(i+1);
-        }
-    }
-    return passwd;
-}
-
-let test = "asd fds af";
-test = hash_passwd(test);
+let test = `sdfgfd
+dfgdfg`;
 console.log(test);
