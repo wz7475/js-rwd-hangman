@@ -1,6 +1,5 @@
 # Hangman game
-
-link
+https://wz7475.github.io/js-rwd-hangman/
 
 ## Features
 - new game with random password
