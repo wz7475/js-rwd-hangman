@@ -119,6 +119,7 @@ const start = () => {
     create_keyboard();
     print_passwd();
     document.getElementById("keyboard").classList.remove("message");
+    mistakes = 0;
 }
 
 window.onload = start;
