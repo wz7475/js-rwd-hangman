@@ -117,7 +117,6 @@ const message = (score) =>
     let content = `<div id="text">${message}</div><div id="button" onclick="start()">JESZCZE RAZ</div>`;
     document.getElementById("keyboard").classList.add("message");
     document.getElementById("keyboard").innerHTML = content;
-    document.getElementById("passwd").innerHTML = passwd;
 }
 
 //load layout
