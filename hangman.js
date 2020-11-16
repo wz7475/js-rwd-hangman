@@ -47,7 +47,6 @@ const print_passwd = () => {
     for (let i=0; i<arr.length; i++){
         content += `<div>${arr[i]}</div>`;
     }
-    content+= "</table>";
     document.getElementById("passwd").innerHTML = content;
 }
 
