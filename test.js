@@ -12,10 +12,7 @@ for (let i=0; i<indexes.length; i++){
     word = word.substring(0, indexes[i]) + "-" + word.substring(indexes[i] +1);
 }
 console.log(word); */
-function randomInt(min, max) {
-    return min + Math.floor((max - min) * Math.random());
+arr = [1,2,34,5];
+for (i in arr){
+    console.log(i);
 }
-let file = require('.\\data\\all.json');
-let length = file["proverbs"].length;
-let proverb = file["proverbs"][randomInt(0, length)];
-console.log(proverb);

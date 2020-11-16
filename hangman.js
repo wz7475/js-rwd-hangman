@@ -9,8 +9,8 @@ const proverbs = [
     "apetyt rośnie w miarę jedzenia",
     "do trzech razy sztuka",
     "Broda mędrcem nie czyni",
-    "Co nagle, to po diable",
-    "Co z oczu, to z serca",
+    "Co nagle to po diable",
+    "Co z oczu to z serca",
     "Darowanemu koniowi w zęby się nie zagląda",
     "Fortuna kołem się toczy"
 ];
@@ -41,7 +41,15 @@ const hash_passwd = (passwd) => {
 }
 
 const print_passwd = () => {
-    document.getElementById("passwd").innerHTML = hashed_passwd;
+    let arr = hashed_passwd.split(" ");
+    //make divs and display flex; inline/inline-block;
+    let content = "<table> ";
+    for (let i=0; i<arr.length; i++){
+        let buf= "<td nowrap>" + arr[i] + "</td> ";
+        content += buf;
+    }
+    content+= "</table>";
+    document.getElementById("passwd").innerHTML = content;
 }
 
 const advance_picture = () =>{
@@ -106,10 +114,11 @@ const message = (score) =>
         message = "Nie udało się! Prawidłowe hasło:\n" + passwd;
         audio = new Audio('audio/fail.wav');
     }
+    audio.play();
     let content = `<div id="text">${message}</div><div id="button" onclick="start()">JESZCZE RAZ</div>`;
     document.getElementById("keyboard").classList.add("message");
     document.getElementById("keyboard").innerHTML = content;
-    audio.play();
+    document.getElementById("passwd").innerHTML = passwd;
 }
 
 //load layout

@@ -1,3 +1,6 @@
+- fix
+    - hashed passwd one word in two lines
+        - check comment in print function on tests branch
 - in reach so far
     - difficulty levels
     - hint
