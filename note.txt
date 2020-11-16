@@ -1,6 +1,6 @@
-- fix
-    - hashed passwd one word in two lines
-        - check comment in print function on tests branch
+- fix layout >370px iphone 8plus pixel 2
+    - margins
+    - look for upper boundry of elements size (450px or more)
 - in reach so far
     - difficulty levels
     - hint
