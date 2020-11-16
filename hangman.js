@@ -43,10 +43,9 @@ const hash_passwd = (passwd) => {
 const print_passwd = () => {
     let arr = hashed_passwd.split(" ");
     //make divs and display flex; inline/inline-block;
-    let content = "<table> ";
+    let content = "";
     for (let i=0; i<arr.length; i++){
-        let buf= "<td nowrap>" + arr[i] + "</td> ";
-        content += buf;
+        content += `<div>${arr[i]}</div>`;
     }
     content+= "</table>";
     document.getElementById("passwd").innerHTML = content;

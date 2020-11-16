@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    border: 1px solid red;
+    /* border: 1px solid red; */
 }
 
 body, html{
@@ -17,7 +17,13 @@ body, html{
     font-size: 2em;
     text-align: center;
     letter-spacing: 0.15em;
-    margin: 20px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+#passwd div{
+    margin: 0 10px;
 }
 
 #picture{
@@ -128,6 +134,9 @@ body, html{
         width: 50px;
         font-weight: 900;
     }
+    #passwd{
+        font-size: 1.6em;
+    }
     /* #picture img{
         height: 150px;
         width: auto;
@@ -143,6 +152,10 @@ body, html{
         width: 40px;
         font-weight: 900;
     }
+    /* #img_container, #picture img{
+        height: 150px;
+        width: auto;
+    } */
 }
 
 @media only screen and (min-width: 900px){
