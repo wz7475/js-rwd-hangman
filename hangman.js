@@ -4,6 +4,7 @@ const letters = "AĄBCĆDEĘFGHIJKLŁMNŃOÓPQRSŚTUVWXYZŻŹ";
 let mistakes = 0;
 let used_proverbs = [];
 let random_index = 0;
+let previous_index = 0;
 const proverbs = [
     "bez pracy nie ma kołaczy",
     "czas leczy rany",
@@ -21,12 +22,15 @@ const randomize_passwd = () =>{
     function randomInt(min, max) {
         return min + Math.floor((max - min) * Math.random());
     }
-    if (used_proverbs.length === proverbs.length)
+    if (used_proverbs.length === proverbs.length){
         used_proverbs = [];
+        used_proverbs.push(previous_index);
+    }
     do{
         random_index = randomInt(0,proverbs.length);
     }while (used_proverbs.includes(random_index));
     used_proverbs.push(random_index);
+    previous_index = random_index;
     return proverbs[random_index].toUpperCase();
 }
 
