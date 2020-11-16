@@ -2,16 +2,18 @@ let passwd = "";
 let hashed_passwd = "";
 const letters = "AĄBCĆDEĘFGHIJKLŁMNŃOÓPQRSŚTUVWXYZŻŹ";
 let mistakes = 0;
+let used_proverbs = [];
+let random_index = 0;
 const proverbs = [
     "bez pracy nie ma kołaczy",
     "czas leczy rany",
-    "elektryka prąd nie tyka",
+    /* "elektryka prąd nie tyka",
     "apetyt rośnie w miarę jedzenia",
     "do trzech razy sztuka",
     "Broda mędrcem nie czyni",
     "Co nagle to po diable",
     "Co z oczu to z serca",
-    "Darowanemu koniowi w zęby się nie zagląda",
+    "Darowanemu koniowi w zęby się nie zagląda", */
     "Fortuna kołem się toczy"
 ];
 
@@ -19,7 +21,13 @@ const randomize_passwd = () =>{
     function randomInt(min, max) {
         return min + Math.floor((max - min) * Math.random());
     }
-    return proverbs[randomInt(0,proverbs.length)].toUpperCase();
+    if (used_proverbs.length === proverbs.length)
+        used_proverbs = [];
+    do{
+        random_index = randomInt(0,proverbs.length);
+    }while (used_proverbs.includes(random_index));
+    used_proverbs.push(random_index);
+    return proverbs[random_index].toUpperCase();
 }
 
 const create_keyboard = () => {
