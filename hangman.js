@@ -8,15 +8,27 @@ let previous_index = 0;
 const proverbs = [
     "bez pracy nie ma kołaczy",
     "czas leczy rany",
-    /* "elektryka prąd nie tyka",
+    "elektryka prąd nie tyka",
     "apetyt rośnie w miarę jedzenia",
     "do trzech razy sztuka",
     "Broda mędrcem nie czyni",
     "Co nagle to po diable",
     "Co z oczu to z serca",
-    "Darowanemu koniowi w zęby się nie zagląda", */
-    "Fortuna kołem się toczy"
-];
+    "Darowanemu koniowi w zęby się nie zagląda",
+    "Fortuna kołem się toczy",
+    "biednemu zawsze wiatr w oczy",
+    "blisko swej jabłoni jabłko pada",
+    "cel uświęca środki",
+    "cicha woda brzegi rwie",
+    "ciekawość to pierwszy stopień do piekła",
+    "diabeł tkwi w szczegółach",
+    "dla chcącego nic trudnego",
+    "jajko mądrzejsze od kury",
+    "jak cię widzą tak cię piszą",
+    "jedna jaskółka wiosny nie czyni",
+    "kłamstwo ma krótkie nogi",
+    "kradzione nie tuczy"
+]
 
 const randomize_passwd = () =>{
     function randomInt(min, max) {
